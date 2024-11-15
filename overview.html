@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MISP Challenge-Overview</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<!-- <img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"> -->
+					<!-- <h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information
+							Based Speech Processing (MISP) Challenge 2023</a></h1> -->
+					<h1 style="font-size: 120%;  margin: -1% 0% -1% 0%;"><a href="index.html" id="logo">Multimodal Information
+								Based Speech Processing (MISP) 2025 Challenge</a></h1> 	
+					<!-- <img src="images/ieee.svg" width="7%"height="7%" style="margin:-10% 0% 3% 79%;"> -->
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+
+								<li class="current"><a href="overview.html">Overview</a></li>
+								<li><a href="data.html">Data</a></li>
+								<li>
+									<a href="#">Task1</a>
+									<ul>
+										<li><a href="task1_instructions.html">Instructions</a></li>										
+										<li><a href="task1_software.html">Baseline</a></li>
+						                <!-- <li><a href="task1_submission.html">Submission</a></li> -->
+										<li><a href="task1_leaderboard.html">Leaderboard</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Task2</a>
+									<ul>
+										<li><a href="task2_instructions.html">Instructions</a></li>
+										<li><a href="task2_data.html">Baseline</a></li>
+										<li><a href="task2_software.html">Leaderboard</a></li>
+										<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+									</ul>
+								</li>
+								
+								<li>
+									<a href="#">Task3</a>
+									<ul>
+										<li><a href="task3_instructions.html">Instructions</a></li>
+										<li><a href="task3_data.html">Baseline</a></li>
+										<li><a href="task3_software.html">Leaderboard</a></li>
+										<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+									</ul>
+								</li>
+								<li><a href="Guidelines.html">Guidelines</a></li>
+								<li><a href="download.html">Registration</a></li>
+								<li><a href="extral_data.html">Extra Data</a></li>
+								<!-- <li><a href="results.html">Results</a></li> -->
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style2">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+
+									  <center>
+										<figure style="padding:0px;border:0px; margin:0px">
+										<img src="images/2024overview1.png" alt="Schematic Diagram" style="width:70%;padding:0px;border:0" />
+										<figcaption>Fig.1. An example of the recording venue and the used devices</figcaption>
+										</figure>
+									 </center>
+									  <p>As shown in Fig. 1, the participants of the meeting sit around the microphone array and the panoramic camera, both of which are placed on the table in a standard meeting room, engaging in a natural conversation with various topics, encompassing medical treatment, education, business, industrial production, etc. Additionally, various indoor noises, such as clicking, keyboard typing, door opening and closing and fan sounds, occur naturally throughout the sessions.</p>
+
+									  <p>The microphone array is integrated into an iFLYTEK Smart Office Book X3, configured in a 197 mm by 134 mm rectangular topology. Each omnidirectional microphone captures audio at a sampling rate of 16 kHz and a resolution of 32 bits. An Insta360 Panoramic Sports Camera X3 is positioned adjacent to the microphone array. This rectangular camera measures 114 mm by 46mm. The output MP4 file includes 360-degree panoramic video at 3840x1920 resolution and 30 fps, and 2-channel audio recorded at 48 kHz and 16-bit. Additionally, each participant wore a headset microphone that collected near-field speech at 44.1 kHz and 16-bit. This near-field setup minimized interference from off-target sources and ensured a signal-to-noise ratio (SNR) greater than 15 dB, guaranteeing high-quality manual transcription.</p>
+									  
+
+									  <p>All headset microphones were connected to a Zoom F8N Recorder, sharing a common clock. However, three distinct clocks remain: the microphone array, the camera, and the recorder. These clocks are synchronized manually by identifying a specific behavior, such as knocking a cup, performed at the start and end of the recording sessions. The visual frame capturing the moment of contact between the cup wall and the cup cover and the corresponding impact sound waveform are manually aligned using the provided timestamps.</p>
+
+									  <!-- <p>
+										All headset microphones were connected to a Zoom F8N Recorder, sharing a common clock. However, three distinct clocks remain: the microphone array, the camera, and the recorder. These clocks are synchronized manually by identifying a specific behavior, such as knocking a cup, performed at the start and end of the recording sessions. The visual frame capturing the moment of contact between the cup wall and the cup cover and the corresponding impact sound waveform are manually aligned using the provided timestamps.
+									  </p> -->
+									
+									  
+
+									  <!-- <p>In this challenge, we need to tackle mixture speech from complex home scenarios, which include strong background noise and high overlap ratios due to the interfering speakers. With visual information to indicate the target speaker, using the AVTSE model, participants can extract the target speech from far-field audio, eliminating noise and interference from other speakers.</p> -->
+									
+									  <!-- <p>MISP-Meeting contains 125 hours of audio and video data in total. The dataset is divided into 119 hours for training (Train), 3 hours for development (Dev) and 3 hours as the evaluation set (Eval) for challenging scoring and ranking. Specifically, the training, development and evaluation sets contain 72, 9 and 9 sessions, respectively. There is no overlap in speakers and recording rooms among the data in each subset. Each session consists of a discussion involving 4-8 participants. The duration of these discussions varies: in the training set, each session lasts for 2 hours, while in the development and evaluation sets, sessions are 20 minutes long. Consequently, a training session encompasses multiple topic transitions. The total number of participants in the training, development, and evaluation sets is 233, 15, and 15, respectively, with balanced gender representation. All participants' professions or areas of study (for those who are students) are related to the meeting topics. This real-world relevance not only enhances the authenticity of the setting but also helps to minimize the occurrence of extended silent periods during the discussions. The ratio of the speech segment containing overlap to the entire speech segment in the training, development and evaluation sets are 57.30%, respectively. </p>
+									  
+									  <p>One of the advantages of the MISP-Meeting corpus compared to other meeting corpora is the diversity of its meeting rooms. As shown in Table 1, the 23 meeting rooms are categorized into four size groups: tiny, small, medium, and large, ranging from 8.79 to 117.6 square meters. Each subset includes meeting rooms of all sizes, offering a broad spectrum of acoustic properties and layouts. The meeting rooms feature various wall materials, including cement and glass, and are equipped with furnishings such as sofas, TVs, blackboards, fans, air conditioners, and plants. Detailed parameters of each meeting venue will be released with the training data, providing a comprehensive resource for acoustic analysis.</p> -->
+
+									  <!-- <p>Through this challenge, we look forward to more academic and industrial researchers paying attention to the audio-visual front-end technology, especially AVTSE. This provides a new and important solution for solving the problem of performance degradation in complex acoustic scenes. We anticipate that this challenge will foster innovative approaches and advancements in multimodal speech processing.</p>
+
+									  <p>The intellectual property (IP) is not transferred to the challenge organizers, i.e., if code is shared/submitted, the participants remain the owners of their code.</p> -->
+						</div>
+					</div>
+				</section>
+				
+				<!-- <section class="wrapper style1">
+					<div class="container">
+						<h1 style="font-size: 150%;">Challenge Features</h1>
+						<ul>
+							<li>The first challenge for AVTSE system in real-world application scenario</li>
+							<li>Exploring the impact of AVTSE system on back-end ASR system</li>
+							<li>Simultaneous recordings from multiple microphone arrays and video cameras</li>
+							<li>Real conversation, i.e., talkers speaking in a relaxed and unscripted fashion</li>
+							<li>30+ real room acoustics and 250+ native Chinese, speaking Mandarin without strong accents</li>		
+							<li>High overlaps ratios (20%-40%) in multi-talker conversions</li>	
+							<li>Real domestic noise backgrounds, e.g., TV, air conditioning, movement, etc.</li>
+							<li>Strong reverberation that varies depending on different rooms</li>
+						</ul>
+					</div>
+				</section>  -->
+
+				<!-- <section class="wrapper style2">
+					<div class="container">
+						<h1 style="font-size: 150%;">Scenario</h1>
+						<p>We consider the scenario: 2-6 people communicate with each other with TV noise in the background. Multimodal data was collected by microphones and cameras. We aim to support research on audio-visual speech processing in the Home TV scene by providing the large-scale audio-visual corpus of multi-speaker conversational speech recorded via multi-microphone hardware in real living rooms.</p>
+						<p>An example of the recording scene is shown in Fig.2. Subfigure a is a schematic diagram. Six participants are chatting while multiple devices are used to record audio and video in parallel. Subfigure b is a real shot of the recording scene.</p>
+						<center>
+                    		<figure style="padding:0px;border:0px; margin:0px">
+                    		<img src="images/Fig1.jpg" alt="Schematic Diagram" style="width:70%;padding:0px;border:0" />
+                    		<figcaption>(a) Schematic Diagram</figcaption>
+                    		</figure>
+                    		<figure style="padding:0px;border:0px; margin:10px">
+                    		<img src="images/Fig2.jpg" alt="Real Shot" style="width:70%;padding:0px;border:0" />
+                    		<figcaption>(b) Real Shot</figcaption>
+                    		<figcaption>Fig.2. Recording Scene</figcaption>
+                    		</figure>
+			            </center>
+			            <p>There still are some variables in the conversation that is taking place in the real living room. For example, the TV is turned on/off, the conversation is happening during the day or night, etc. Specifically, by observing the real conversations in the real living room, we found that participants would be divided into several groups to discuss different topics. Compared with all participants discussing the same topic, grouping would result in higher overlap ratios. We control the above variables to cover the real scene comprehensively during the recording.</p>
+					</div>
+				</section>  -->
+
+ 				<!-- <section class="wrapper style1">
+					<div class="container">
+						<h1 style="font-size: 150%;">Recording Setup</h1>
+				        <center>
+                            <figure style="padding:0px;border:0px; margin:10px">
+                            <img src="images/Fig3.jpg" alt="Figure2:A real shot of recording in home TV scenario" style="width:60%;padding:0px;border:0" />
+                            <figcaption>Fig.3. Recording Devices</figcaption>
+                            </figure>
+				        </center>
+						<p>According to the distance between the device and the speaker, multiple recording devices were divided into 3 categories:</p>
+						<ol type="a">
+					        <li>Far devices: a linear microphone array (6 mic, 16 kHz, 16-bit) and a wide-angle camera (1080p, 25 fps, 2pi/3), which are placed 3-5m away from the speaker. Each microphone is an omnidirectional microphone. The distance between adjacent microphones is 35mm. The detailed parameters of the wide-angle camera are shown in the table. The linear microphone array is fixed on the top of the wide-angle camera, parallel to the x-axis of the camera coordinate system, and the midpoint coincides with the origin of the camera coordinate system. All participants appear in the camera, which brings speakers position information while reducing the resolution of the lip region of interest (ROI);</br>
+					        <center>
+							<table  class='default'>
+							    <tr>
+							        <th>Sensor type</th>
+							        <td>200W CMOS Sensor</td>
+							    </tr>
+							    <tr>
+							        <th>Pixel size</th>
+							        <td>3 um * 3 um</td>
+							    </tr>
+							    <tr>
+							        <th>Focus plane</th>
+							        <td>1/2.7"</td>
+							    </tr>
+							    <tr>
+							        <th>Focal length</th>
+							        <td>2.8 mm</td>
+							    </tr>
+							    <tr>
+							        <th>Aperture</th>
+							        <td>F1.8</td>
+							    </tr>
+							    <tr>
+							        <th>Field of view</th>
+							        <td>D=141° H=120° V=63°</td>
+							    </tr>
+							    <tr>
+							        <th>Resolution</th>
+							        <td>1920*1080p</td>
+							    </tr>
+							    <tr style="border-bottom: solid 1px;">
+							        <th>Frame rate</th>
+							        <td>25 fps</td>
+							    </tr>
+							    <tr>
+							        <th colspan="2" style="border: solid 1px;">Tab 1. Parameters of the far wide-angle camera</th>
+							    </tr>
+							</table>
+						</center>
+					        </li>
+							<li>Middle devices: a linear microphone array (2 mic, 44.1 kHz, 16-bit) and n high-definition cameras (720p, 25fps, pi/2), which are placed 1-1.5m away from the speaker, where n is the number of participants within this conversation. Two microphones are omnidirectional microphones. The distance between two microphones is 80 mm. The detailed parameters of the high-definition camera are shown in the table. There is no relationship between the position of the linear microphone array and the high-definition camera. There is only the corresponding speaker in each camera, the lip ROI is recorded clearly;</br>
+							<center>
+							<table  class='default'>
+							    <tr>
+							        <th>Sensor type</th>
+							        <td>200W CMOS Sensor</td>
+							    </tr>
+							    <tr>
+							        <th>Pixel size</th>
+							        <td>3.75 um * 3.75 um</td>
+							    </tr>
+							    <tr>
+							        <th>Focus plane</th>
+							        <td>1/3"</td>
+							    </tr>
+							    <tr>
+							        <th>Focal length</th>
+							        <td>3 mm</td>
+							    </tr>
+							    <tr>
+							        <th>Aperture</th>
+							        <td>F: 1.5</td>
+							    </tr>
+							    <tr>
+							        <th>Field of view</th>
+							        <td>D=116° H=99° V=53.4°</td>
+							    </tr>
+							    <tr>
+							        <th>Resolution</th>
+							        <td>1280*720p</td>
+							    </tr>
+							    <tr style="border-bottom: solid 1px;">
+							        <th>Frame rate</th>
+							        <td>25 fps</td>
+							    </tr>
+							    <tr>
+							        <th colspan="2" style="border: solid 1px;">Tab 2. Parameters of the middle high-definition camera</th>
+							    </tr>
+							</table>
+						</center>
+							</li>
+							<li>Near devices: n high-fidelity microphones (44.1 kHz, 16-bit), which were stuck in the middle of the corresponding speaker's chin, respectively. The collected audio signal is rarely interfered by the off-target source and the SNR is estimated to be greater than 15 db. This provides a guarantee for high-quality manual transcription.</li>
+							<p></p>
+						<p>Various devices have resulted in inconsistent clocks. We address this from two aspects: synchronization devices and manual post-processing.<p>
+							<li>Synchronization devices: the sound card (ZOOM F8n) is used to synchronize the clock of the middle linear microphone array and the clocks of near high-fidelity microphones while Vicando software, running on the industrial PC (MIC-770), is used to synchronize the clocks of all cameras.</li>
+						</ol>
+						<p></p>
+						<p>Even if synchronization devices were used, there are still 3 different clocks, i.e. the clock of the sound card, the clock of the far linear microphone array and the clock of the industrial PC. They are synchronized by finding the mark point manually. A specific behavior, i.e. knocking the cup, would be done while the recording is started. The visual frame where the cup wall and the cup cover are in contact and the waveform point which is corresponding to the impact sound are aligned manually.</p>
+					</div>
+				</section>  -->
+
+
+			<!-- Footer -->
+				<div id="footer">
+<!-- 					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Links</h3>
+								<ul class="links">
+									<li><a href="#">Mattis et quis rutrum</a></li>
+									<li><a href="#">Suspendisse amet varius</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan dolor</a></li>
+									<li><a href="#">Mattis rutrum accumsan</a></li>
+									<li><a href="#">Suspendisse varius nibh</a></li>
+									<li><a href="#">Sed et dapibus mattis</a></li>
+								</ul>
+							</section>
+
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>More Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Duis neque nisi dapibus</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan sed</a></li>
+									<li><a href="#">Mattis et sed accumsan</a></li>
+									<li><a href="#">Duis neque nisi sed</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum amet varius</a></li>
+								</ul>
+							</section>
+
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div> -->
+
+					<!-- Icons -->
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+							<li><a href="https://groups.google.com/g/misp2021" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; All rights reserved</li><li>E-mail: mispchallenge@gmail.com</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

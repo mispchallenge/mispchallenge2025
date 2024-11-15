@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MISP Challenge-Task1 Data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<!-- <img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"> -->
+					<!-- <h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information
+							Based Speech Processing (MISP) Challenge 2022</a></h1> -->
+					<h1 style="font-size: 120%;  margin: -1% 0% -1% 0%;"><a href="index.html" id="logo">Multimodal Information
+								Based Speech Processing (MISP) 2023 Challenge</a></h1> 	
+					<img src="images/ieee.svg" width="7%"height="7%" style="margin:-10% 0% 3% 79%;">
+
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="overview.html">Overview</a><li>
+								<li class="current">
+									<a href="#">Task</a>
+									<ul>
+										<li><a href="task1_instructions.html">Instructions</a></li>
+										<li><a href="task1_data.html">Data</a></li>
+										<li><a href="task1_software.html">Baseline</a></li>
+						                <li><a href="task1_submission.html">Submission</a></li>
+									</ul>
+								</li>
+	
+								<!-- <li>
+									<a href="#">Task3</a>
+									<ul>
+										<li><a href="task3_instructions.html">Instructions</a></li>
+										<li><a href="task3_data.html">Data</a></li>
+										<li><a href="task3_software.html">Software</a></li>
+										<li><a href="task3_submission.html">Submission</a></li>
+									</ul>
+								</li> -->
+								<li><a href="download.html">Registration</a></li>
+								<li><a href="extral_data.html">Extra Data</a></li>
+								<!-- <li><a href="contact.html">Contact</a></li> -->
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<!-- <h2>Task1 Datasets</h2> -->
+						<h1 style="font-size: 150%;">Track1 Datasets</h1>
+						<center>
+							<figure style="padding:0px;border:0px; margin:10px">
+								<img src="images/track1_data.png" style="width:800px;padding:0px;border:0" />
+							</figure>
+						</center>
+						
+						<p><strong>There isn’t duplicate speaker and room in training, development test and evaluation test sets.For training and development sets, the released video includes the far scenario and the middle scenario while the released audio includes the far scenario, the middle scenario and the near scenario. But for the evaluation set, we only release the video in far scenario and the audio in far scenario during the challenge. </strong></p>
+						<p><strong>The release of the evaluation set will use the same directory structure and file name rules as the development set. We will provide an oracle speech segmentation timestamp file with each line of content < start_time > < end_time > speech.  Each line of the final submitted RTTM file is SPEAKER < Session_ID > 1 < start_time > < duration_time > NA NA <Speaker_ID> NA NA, and the Session_ID of the result file must be exactly the same as the official file.</strong></p>
+						<p></p>
+						<h3 style="font-size: 120%;">Directory Structure</h3>				
+		
+							<p>
+							We plan to release an audio-visual wake word spotting dataset collected in home TV scenarios. The recording scenes can refer to Fig. 1. The wake word is “Xiao T Xiao T”. There are more than 300 speakers. The dataset’s accent is Mandarin and all data were collected in more than 30 real rooms. A sample will be taken as a positive sample if the wake word is included, otherwise it will be regarded as a negative sample. For each sample, at most one wake word is included. For the duration, different scenarios data (i.e. far, middle, and near field) are calculated separately. The statistics of the dataset are shown in Tab.1 above. 
+						</p>
+
+						<center>
+							<figure style="padding:0px;border:0px; margin:10px">
+                            <img src="images/track1_struct.png" style="width:45%;padding:0px;border:0" />
+                            </figure>
+						</center>
+
+						<p>
+						The data was divided into three subsets: Training, Development, Evaluation. Dataset split follows speaker and room independence, i.e. no speaker and room are repeated among the three splits. The audio data, video data follow the directory structure shown in Tab.2. Each positive/negative directory has subdirectories for audio/video. Each audio/video directory has subdirectories for training, development and evaluation sets. Each train/dev/ directory has subdirectories for far, middle, and near field recording devices in the audio directory. Each train/dev/ directory has subdirectories for far and middle field recording devices in the video directory. In addition, we will provide some noise data. 
+						</p>
+						<p><b>Audio</b></p>
+						<p>
+							Each audio sample is stored in a single-channel 16-bit stream with a sampling rate of 16kHz. The WAV files are named as follows:</br> 
+							Far-field audio:</br> 
+							< Room ID >_< Speakers IDs >_< Configuration ID >_< Index >_Far_< Speaker ID >_< Channel ID >_< Segment ID 1 >_< Segment ID 2 >.wav</br> 
+							Middle-field audio:</br> 
+							< Room ID >_< Speakers IDs >_< Configuration ID >_< Index >_Middle_< Speaker ID >_< Channel ID >_< Segment ID 1>_< Segment ID 2 >.wav</br> 
+							Near-field audio:</br> 
+							< Room ID >_< Speakers IDs >_< Configuration ID >_< Index >_Near_< Speaker ID >_< Segment ID 1 >_< Segment ID 2 >.wav</br> 
+							Here, < Segment ID 1 > and < Segment ID 2 > represent the start and the end time points of utterance segmentation in original sample respectively, which can be used to distinguish different examples.</br> 
+						</p>
+						<p><b>Video</b></p>
+						<p>
+							All video data are distributed as MP4 files with a frame rate of 25 fps. Each session consists of the recordings made by the far-field wide-angle camera and the middle-field high-definition cameras worn by each participant. These MP4 files are named as follows:
+							Far-field wide-angle camera (1080p):</br> 
+							< Room ID >_< Speakers IDs >_< Configuration ID >_< Index >_Far_< Speaker ID >_< Segment ID 1 >_< Segment ID 2 >.mp4
+							</br> 
+							Middle-field high-definition camera (720p):</br> 
+							< Room ID >_< Speakers IDs >_< Configuration ID >_< Index >_Middle_< Speaker ID >_< Segment ID 1 >_< Segment ID 2 >.mp4</br> 
+						</p>
+					</div>
+				</section>
+
+			<!-- Gigantic Heading -->
+
+			<!-- Footer -->
+				<div id="footer">
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; All rights reserved</li><li>E-mail: mispchallenge@gmail.com</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

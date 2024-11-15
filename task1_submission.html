@@ -1,0 +1,169 @@
+<html>
+
+<head>
+	<title>MISP Challenge-Task1 Submission</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+			<!-- <img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"> -->
+			<!-- <h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information
+					Based Speech Processing (MISP) Challenge 2022</a></h1> -->
+			<h1 style="font-size: 120%;  margin: -1% 0% -1% 0%;"><a href="index.html" id="logo">Multimodal Information
+					Based Speech Processing (MISP) 2023 Challenge</a></h1>
+			<img src="images/ieee.svg" width="7%" height="7%" style="margin:-5% 0% 3% 79%;">
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="overview.html">Overview</a></li>
+					<li><a href="data.html">Data</a></li>
+					<li class="current">
+						<a href="#">Task</a>
+						<ul>
+							<li><a href="task1_instructions.html">Instructions</a></li>
+							<li><a href="task1_software.html">Baseline</a></li>
+							<li><a href="task1_submission.html">Submission</a></li>
+						</ul>
+					</li>
+
+					<!-- <li>
+									<a href="#">Task3</a>
+									<ul>
+										<li><a href="task3_instructions.html">Instructions</a></li>
+										<li><a href="task3_data.html">Data</a></li>
+										<li><a href="task3_software.html">Software</a></li>
+										<li><a href="task3_submission.html">Submission</a></li>
+									</ul>
+								</li> -->
+					<li><a href="download.html">Registration</a></li>
+					<li><a href="extral_data.html">Extra Data</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<section class="wrapper style2">
+			<div class="container">
+				<h2 id="task1submission">Submission</h2>
+				<div style="border-color:#922;color:#922;font-weight:bold">
+					<h2>Note:</h2>
+					<h3> Now Evaluation Set Phase: 2023.11.14 — <del>2023.12.14</del> 2023.12.21 (AOE)<br> 1. Due to the
+						limits of codalab, you have to participate in <a
+							href="https://codalab.lisn.upsaclay.fr/competitions/16384">a new competition</a> on codalab
+						for the evaluation phase leaderboard. The results of the baseline system on the evaluation set have been published on <a href="https://github.com/mispchallenge/MISP-2023-Challenge-Baseline/tree/main">github.</a>
+						<br> 2. Follow the steps mentioned below, make sure to register on CodaLab using the same institutional email address you used when registering in the MISP 2023 challenge.
+
+						<br> 3. Then, set your team name on CodaLab，and make sure it's the same as the one that you use to register in the MISP 2023 challenge, and then send applications to participate.
+					</h3>
+				</div>
+				<ul>
+					<li><strong>STEP 1:</strong> Register on <a href="https://codalab.lisn.upsaclay.fr/">codalab</a>
+					</li>
+				</ul>
+				<blockquote>
+					<p>note: make sure to use <strong>the same e-mail address and teamname</strong> in the MISP 2023 challenge and
+						CodaLab, or you may not be allowed to submit the results in the competition. If you'd like to
+						change e-mail address, please contact with organizers. </p>
+					<p><img src="images/seteamname.png" alt="seteamname.png" /></p>
+				</blockquote>
+				<ul>
+					<li><strong>STEP 2:</strong> Apply to join in the competition and wait for
+						approval. </li>
+				</ul>
+				<blockquote>
+					<p>tips: just check the box ( you don't need to download the term as you have signed it when you
+						register in MISP 2023 challenge ), and we'll permit access at that night.</p>
+				</blockquote>
+				<p><img src="images/register.png" alt="register" /></p>
+				<ul>
+					<li><strong>STEP 3:</strong> Submit your result and check the scores</li>
+				</ul>
+				<blockquote>
+					<ul>
+						<li>
+							Please note that due to platform limitations, we are not able to test audio directly. Therefore, you need to decode the audio yourself and obtain the transcribed text based on the ASR backend system we provide in the baseline system. Please follow the instructions in Baseline System to decode the speech using the provided ASR backend. Then, submit the text to CodaLab, and the platform will calculate the CER score for it. In order to ensure fairness and eliminate the possibility of cheating, before announcing the results of the challenge, we will ask you to submit the audio file corresponding to the highest score (the submission method is to be determined). We will decode the audio and calculate the CER. If there is a significant difference between the final CER score and the score displayed on the CodaLab platform, the applicant will be disqualified.
+						</li>
+						<li>
+							<p>Submit transcribed text to CodaLab，make sure your submitted zip file as following directory structure:</p>
+							<p><em>|submission.zip</em></p>
+							<p>​ <em>||--submission.txt</em></p>
+						</li>
+						<li>
+							<p>Make sure each row of the transcript in the following format, which is a key-word separated by a space character:</p>
+						</li>
+					</ul>
+					<blockquote>
+						<p>segment_id 文字文字文字 （only Chinese characters included in the text part without any punctuation）</p>
+					</blockquote>
+
+					<ul>
+						<li>
+							<p>Here is a <a href="doc/submission.zip">submission example</a>, and the whole <a href="doc/segments_id.list">segment_id list</a> for the evaluation set. Note the number of segments in ground truth is smaller than those directly extracted from the transcript(.textgrid files), since some of the segments labeled in .textgrid files lack relevant audio or video segments. Therefore, the segment_id in the text you submit needs to be consistent with segment_id list. The segment_id list corresponds to the segments file we provide. In order to prepare the corresponding audio or video segments based on the segments file, you can visit the github website of baseline, view and modify: simulation/gss_main/gss_main/prepare_gss_dev.sh</a>.
+							</p>
+						</li>
+						<li>
+							<p>When the "Status" in the submission table turns to "Finished", you can refresh the page the check the score (CER) below. You can also click the button named “View scoring output log” to check if you miss any segments in your submission.</p>
+						</li>
+					</ul>
+				</blockquote>
+				<p><img src="images/submit.png" alt="" /></p>
+				<ul>
+					<li><strong>Other information</strong></li>
+				</ul>
+				<blockquote>
+					<ul>
+						<li>
+							<p>Make sure a. your submitted file, includes all segments in the evaluation set. b. your submission file ia in required format, or the submission will fail.</p>
+						</li>
+						<li>
+							<p>
+								For each submitted score, it will be directly on the leader board if it's your best score so far. 
+							</p>
+						</li>
+						<li>
+							<p>
+								During the evaluation set phase, every group is allowed to 5 times per day. Due to the problem of CodaLab, there is a small probability that the result will not be obtained for a long time. Please wait patiently or submit at another time.	
+							</p>
+						</li>
+						<li>
+							<p>
+								If you meet any problems during submission, please contact us.
+							</p>
+						</li>
+					</ul>
+				</blockquote>
+			</div>
+		</section>
+		
+
+	</div>
+	<div class="copyright">
+		<ul class="menu">
+			<li>&copy; All rights reserved</li>
+			<li>E-mail: mispchallenge@gmail.com</li>
+		</ul>
+	</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

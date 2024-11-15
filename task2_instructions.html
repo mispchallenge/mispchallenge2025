@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MISP Challenge-Task2 Instructions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LaTeX in HTML</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" 
+			onload="renderMathInElement(document.body);"></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<!-- <img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"> -->
+					<!-- <h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information
+							Based Speech Processing (MISP) Challenge 2023</a></h1> -->
+					<h1 style="font-size: 120%;  margin: -1% 0% -1% 0%;"><a href="index.html" id="logo">Multimodal Information
+								Based Speech Processing (MISP) Challenge 2024</a></h1> 	
+					<img src="images/ieee.svg" width="7%"height="7%" style="margin:-10% 0% 3% 79%;">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="overview.html">Overview</a></li>
+								<li><a href="data.html">Data</a></li>
+								<li>
+									<a href="#">Task</a>
+									<ul>
+										<li><a href="task1_instructions.html">Instructions</a></li>
+										<li><a href="task1_software.html">Baseline</a></li>
+						                <!-- <li><a href="task1_submission.html">Submission</a></li> -->
+										<li><a href="task1_leaderboard.html">Leaderboard</a></li>
+									</ul>
+								</li>
+								<li class="current">
+									<a href="#">Task2</a>
+									<ul>
+										<li><a href="task2_instructions.html">Instructions</a></li>
+										<li><a href="task2_data.html">Baseline</a></li>
+										<li><a href="task2_software.html">Leaderboard</a></li>
+										<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+									</ul>
+								</li>
+								
+								<li>
+									<a href="#">Task3</a>
+									<ul>
+										<li><a href="task3_instructions.html">Instructions</a></li>
+										<li><a href="task3_data.html">Baseline</a></li>
+										<li><a href="task3_software.html">Leaderboard</a></li>
+										<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+									</ul>
+								</li>
+								<li><a href="Guidelines.html">Guidelines</a></li>
+								<li><a href="download.html">Registration</a></li>
+								<li><a href="extral_data.html">Extra Data</a></li>
+								<!-- <li><a href="contact.html">Contact</a></li> -->
+							</ul>
+						</nav>
+
+				</div>
+			<!-- Main -->
+			<section class="wrapper style1">
+				<div class="container">
+					
+					<h1 style="font-size: 150%;">Instructions</h1>
+					<p>The challenge of AVSR is to handle overlapped segmentation and to recognize the content of multiple speakers. Meanwhile, the provided evaluation set is the same as Task 1 and the ground truth diarization information is avail. Finally, participants are required to transcribe each speaker. </p>
+					
+
+					<h1 style="font-size: 150%;">Evaluation</h1>
+					<p>The performance is measured by character error rate (CER). The CER compares, for a given hypothesis output, the total number of characters, including spaces, to the minimum number of insertions (Ins), substitutions (Subs) and deletions (Del) of characters that are required to obtain the reference transcript. Specifically, CER is calculated by:</p>
+					<div>
+						\[
+						{\rm CER} = \frac{N_{\rm Subs} + N_{\rm Del} + N_{\rm Ins}}{N_{\rm total}} \times 100
+						\]
+					</div>
+					<p>
+						where \(N_{\rm Subs}\), \(N_{\rm Del}\) and \(N_{\rm Ins}\) are the character number of the three errors, respectively, and \(N_{\rm total}\) is the total number of characters.The lower the CER value (with 0 being a perfect score), the better the recognition performance. For such speech overlap segments, we calculate all errors based on the recognition results and the ground truth for each speaker based on the oracle speaker diarization results.</p>
+
+			
+			</section>
+
+
+		<!-- Gigantic Heading -->
+<!-- 				<section class="wrapper style2">
+				<div class="container">
+				</div>
+			</section>
+
+			<section class="wrapper style1">
+				<div class="container">
+					<h1 style="font-size: 150%;">......</h1>
+				</div>
+			</section> -->
+
+		<!-- Footer -->
+			<div id="footer">
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; All rights reserved</li><li>E-mail: mispchallenge@gmail.com</li>
+						</ul>
+					</div>
+
+			</div>
+
+	</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

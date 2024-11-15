@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MISP Challenge-Task3 Instructions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LaTeX in HTML</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" 
+			onload="renderMathInElement(document.body);"></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<!-- <img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"> -->
+					<!-- <h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information
+							Based Speech Processing (MISP) Challenge 2023</a></h1> -->
+					<h1 style="font-size: 120%;  margin: -1% 0% -1% 0%;"><a href="index.html" id="logo">Multimodal Information
+								Based Speech Processing (MISP) Challenge 2024</a></h1> 	
+					<img src="images/ieee.svg" width="7%"height="7%" style="margin:-10% 0% 3% 79%;">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="overview.html">Overview</a></li>
+								<li><a href="data.html">Data</a></li>
+								<li>
+									<a href="#">Task</a>
+									<ul>
+										<li><a href="task1_instructions.html">Instructions</a></li>
+										<li><a href="task1_software.html">Baseline</a></li>
+						                <!-- <li><a href="task1_submission.html">Submission</a></li> -->
+										<li><a href="task1_leaderboard.html">Leaderboard</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Task2</a>
+									<ul>
+										<li><a href="task2_instructions.html">Instructions</a></li>
+										<li><a href="task2_data.html">Baseline</a></li>
+										<li><a href="task2_software.html">Leaderboard</a></li>
+										<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+									</ul>
+								</li>
+								
+								<li  class="current">
+									<a href="#">Task3</a>
+									<ul>
+										<li><a href="task3_instructions.html">Instructions</a></li>
+										<li><a href="task3_data.html">Baseline</a></li>
+										<li><a href="task3_software.html">Leaderboard</a></li>
+										<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+									</ul>
+								</li>
+								<li><a href="Guidelines.html">Guidelines</a></li>
+								<li><a href="download.html">Registration</a></li>
+								<li><a href="extral_data.html">Extra Data</a></li>
+								<!-- <li><a href="contact.html">Contact</a></li> -->
+							</ul>
+						</nav>
+
+				</div>
+			<!-- Main -->
+			<section class="wrapper style1">
+				<div class="container">
+					
+					<h1 style="font-size: 150%;">Instructions</h1>
+					<p>Task 3 aims to directly solve the ``who spoke what when" problem and can be seen as a combination of Task 1 and 2. Of course, end-to-end systems are also important. The evaluation set is the same as Task 2, but using ground truth diarization information is prohibited. </p>
+					
+
+					<h1 style="font-size: 150%;">Evaluation</h1>
+					<p>With reference to the concatenated minimum-permutation word error rate (cpWER) in, we use concatenated minimum-permutation character error rate (cpCER) as the evaluation criterion in Task 3. The calculation of cpCER in a session is divided into three steps:</p>
+					<ul>
+						<li>Recognition results and reference transcriptions belonging to the same speaker are concatenated on the timeline in a session.</li>
+						<li>CERs between the reference and all possible speaker permutations of the hypothesis \(\{\bm{s}_i | i = 0, 1, \cdots,  \mathrm{P}_{N_{\rm spk}}^{N_{\rm spk}}\}\) are calculated as Eq.CER), where \(N_{\rm spk}\) is the total number of speakers in the session.</li>
+						<li>The lowest CER as the cpCER, the process is described as follows:</li>
+						<div>
+							\[
+							{\rm cpCER} = \min_{\{\bm{s}_i | i = 0, 1, \cdots,  \mathrm{P}_{N_{\rm spk}}^{N_{\rm spk}}\}}{\rm CER}_i
+							\]
+						</div>
+					</ul>
+					
+
+			
+			</section>
+
+
+		<!-- Gigantic Heading -->
+<!-- 				<section class="wrapper style2">
+				<div class="container">
+				</div>
+			</section>
+
+			<section class="wrapper style1">
+				<div class="container">
+					<h1 style="font-size: 150%;">......</h1>
+				</div>
+			</section> -->
+
+		<!-- Footer -->
+			<div id="footer">
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; All rights reserved</li><li>E-mail: mispchallenge@gmail.com</li>
+						</ul>
+					</div>
+
+			</div>
+
+	</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

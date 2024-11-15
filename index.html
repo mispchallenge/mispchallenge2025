@@ -1,0 +1,373 @@
+
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Multimodal Information Based Speech Processing (MISP) 2025 Challenge</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+
+			<!-- <img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"> -->
+			<!-- <h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information
+					Based Speech Processing (MISP) Challenge 2022</a></h1> -->
+			<h1 style="font-size: 120%;  margin: -1% 0% -1% 0%;"><a href="index.html" id="logo">Multimodal Information
+						Based Speech Processing (MISP) 2025 Challenge</a></h1> 	
+			<!-- <img src="images/ieee.svg" width="6%"height="6%" style="margin:-10% 0% 3% 79%;"> -->
+			<!-- Nav -->
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="overview.html">Overview</a></li>
+					<li><a href="data.html">Data</a></li>
+					<li>
+						<li>
+							<a href="#">Task1</a>
+							<ul>
+								<li><a href="task1_instructions.html">Instructions</a></li>										
+								<li><a href="task1_software.html">Baseline</a></li>
+								<!-- <li><a href="task1_submission.html">Submission</a></li>
+								 -->
+								<li><a href="task1_leaderboard.html">Leaderboard</a></li>
+								
+							</ul>
+					</li>
+
+					<li>
+						<a href="#">Task2</a>
+						<ul>
+							<li><a href="task2_instructions.html">Instructions</a></li>
+							<li><a href="task2_data.html">Baseline</a></li>
+							<li><a href="task2_software.html">Leaderboard</a></li>
+							<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#">Task3</a>
+						<ul>
+							<li><a href="task3_instructions.html">Instructions</a></li>
+							<li><a href="task3_data.html">Baseline</a></li>
+							<li><a href="task3_software.html">Leaderboard</a></li>
+							<!-- <li><a href="task3_submission.html">Submission</a></li> -->
+						</ul>
+					</li>
+					<li><a href="Guidelines.html">Guidelines</a></li>
+					<li><a href="download.html">Registration</a></li>
+					<li><a href="extral_data.html">Extra Data</a></li>
+					<!-- <li><a href="results.html">Results</a></li> -->
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- <section class="wrapper style1">
+			<div class="container">
+				<h1 style="font-size: 150%;">News</h1>
+				<p><strong>News: </strong>The MISP 2024 challenge has been accepted by ICASSP 2024 Signal Processing Grand Challenge (SPGC). Please refer to <a href="https://2024.ieeeicassp.org/sp-grand-challenges/">https://2024.ieeeicassp.org/sp-grand-challenges</a> for more details of ICASSP 2024 SPGC.</p> -->
+				<!-- <p><strong>September 1st, 2023: </strong>The download link of training set and development set has been sent to the registered participants via email.</p> -->
+			<!-- </div>
+		</section> -->
+
+		
+
+		<!-- Highlights -->
+		<section class="wrapper style2">
+			<div class="container">
+
+				<h1 style="font-size: 150%;">News</h1>
+					<p>	Dear MISP Community, </p>
+					<p> We regret to inform you that our proposal for ICASSP 2025 was not accepted. As a result, all subsequent plans related to MISP 2024 are currently on hold until further notice. We understand that this may cause some inconvenience, and we appreciate your understanding and patience during this time. However, we would like to encourage you to continue submitting your data usage requests. Once the situation is resolved and the freeze is lifted, we will distribute data access links according to the order in which requests were received. We remain committed to supporting your research efforts and look forward to your continued engagement with the MISP dataset.
+					</p>
+					
+					<p>Thank you for your ongoing support.</p>
+					<p>Sincerely</p>
+					<p>MISP Committee</p>
+					
+			</div>
+		</section>
+		
+		<section class="wrapper style2">
+			<div class="container">
+
+				<h1 style="font-size: 150%;">Introduction</h1>
+					<p>In recent years, the proliferation of speech-enabled applications has led to increasingly complex usage scenarios, such as home environments and meetings. Previous multimodal information-based speech processing (MISP) challenges in 2021, 2022, and 2023 targeted the home scenario, where several people converse in Chinese while watching TV in a living room. A large-scale audio-visual Chinese home conversational corpus was released to support multiple audio-visual speech processing tasks, including wake word spotting, target speaker extraction, speaker diarization, and speech recognition. These MISP challenges have attracted extensive participation with over 150 teams downloading the dataset, more than 60 teams actively submitting their results, and 15 research papers presented at ICASSP in 2022, 2023, and 2024. </p>
+
+					<p>Meetings are among the most valuable yet challenging contexts for speech applications due to their rich information exchange and decision-making processes. Accurate transcription and analysis are crucial for enhancing productivity and preserving insights, but this task is difficult due to varied speech styles and complex acoustic conditions. Current state-of-the-art audio-only techniques are hitting performance plateaus. For example, in the AliMeeting scenarios, the best performances achieved a character error rate (CER) of approximately 20%, which is inadequate for many real-world applications. The McGurk effect and subsequent studies have shown that visual cues can improve speech perception in noisy environments. Thus, the MISP 2024 challenge aims to advance meeting transcription techniques by incorporating multimodal information, such as video. The specific tasks are as follows: 1) Audio-Visual Speaker Diarization, 2) Audio-Visual Speech Recognition and 3) Audio-Visual Diarization and Recognition. The following resources will be provided:  </p>	
+					<!-- <P style="text-indent: 30px;">Audio-Visual Target Speaker Extraction </P> -->
+						
+					<!-- <p>On this web site you will find everything you need to get started, including,</p> -->
+					<ul>
+						<li>A large-scale audio-visual meeting corpus, MISP-Meeting, and a comprehensive baseline system.</li>
+						<li>A public benchmark for fair comparisons</li>
+						<li>A challenge session to foster communication.</li>
+						<li>A summary publication highlighting the most effective techniques and promising directions.</li>
+						<!-- <li>An instruction on how to submit your results</li>
+						<li>A download center with links to all tools and data packages</li> -->
+					</ul>		
+					<!-- <p>You can find a clear description of the task setting, dataset, and baseline in the overview <a href="https://arxiv.org/abs/2309.08348">paper</a></p> -->
+			</div>
+		</section>
+
+		<section class="wrapper style1">
+			<div class="container">
+				<h1 style="font-size: 150%;">Planned Schedule(AOE Time)</h1>
+				<ul>
+					<li>Registration opens:  <strong>July 20, 2024</strong></li>
+					<li>Training set and Development set release: <strong>August 3, 2024 (Due to the delay of ICASSP 2025 SPGC notification)</strong></li>
+					<li>Baseline systems release:   <strong>August 15, 2024</strong></li>
+					<li>Registration closes, evaluation set release and leaderboard update for evaluation set: <strong>October 18, 2024</strong></li>
+					<li>Leaderboard freeze: <strong>November 18, 2024</strong></li>
+					<li>System report: <strong>December 2, 2024</strong>
+					<!-- </del> <strong>December 21st, 2023</strong></li>
+					<li>System report submission: <del><strong>December 24th, 2023</strong></del> <strong>December 31st, 2023</strong></li>		
+					<li>Result announcement: <del><strong>January 1st, 2024</strong></del> <strong>January 8th, 2024</strong></li>	
+					<li>ICASSP 2024 Grand Challenge 2-page Papers Due (by invitation only): <del><strong>January 2nd , 2024 </strong></del> <strong>January 9th , 2024 </strong></li>
+					<li>ICASSP 2024 Grand Challenge 2-page Paper Acceptance Notification: <del><strong>January 16th, 2024</strong></del> <strong>January 23rd, 2024</strong></li>
+					<li>ICASSP 2024 Camera-ready Grand Challenge 2-page Papers Due: <del><strong>January 23rd, 2024 </strong></del> <strong>January 30th, 2024</strong></li>
+					<li>ICASSP 2024 Grand Challenge OJ-SP Papers Due (by invitation only): <strong>June 19th, 2024</strong></li> -->
+				</ul>
+			</div>
+		</section> 
+
+		<!-- Posts -->
+		<section class="wrapper style2">
+			<div class="container">
+				<h1 style="font-size: 150%;">Organizers</h1>
+
+				<div class="row">
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="http://staff.ustc.edu.cn/~jundu/index.html" class="image left"><img
+									src="images/Jun_Du.jpeg" alt="" /></a>
+							<div class="inner">
+								<br />
+								<a href="http://staff.ustc.edu.cn/~jundu/index.html">
+									<h3>Jun Du</h3>
+								</a>
+								<p>University of Science and Technology of China </p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="https://chl.ece.gatech.edu/" class="image left"><img src="images/chl.jpeg"
+									alt="" /></a>
+							<div class="inner">
+								<br />
+								<a href="https://chl.ece.gatech.edu/">
+									<h3>Chin-Hui LEE</h3>
+								</a>
+								<p>Georgia Institute of Technology </p>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="row">
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="https://teacher.nwpu.edu.cn/en/chenjingdong.html" class="image left"><img
+									src="images/Jingdong.jpeg" alt="" /></a>
+							<div class="inner">
+								<br />
+								<a href="https://teacher.nwpu.edu.cn/en/chenjingdong.html">
+									<h3>Jingdong Chen</h3>
+								</a>
+								<p>Northwestern Polytechnical University</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="https://sites.google.com/view/shinjiwatanabe" class="image left"><img
+									src="images/shinji_watanabe.jpeg" alt="" /></a>
+							<div class="inner">
+								<br />
+								<a href="https://sites.google.com/view/shinjiwatanabe">
+									<h3>Shinji Watanabe</h3>
+								</a>
+								<p>Carnegie Mellon University</p>
+							</div>
+						</div>
+					</section>
+
+				</div>
+
+				<div class="row">
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="https://unikore.it/index.php/it/ingegneria-informatica-persone/docenti-del-corso/itemlist/category/1589-siniscalchi"
+								class="image left"><img src="images/siniscalchi_marco.jpeg" alt="" /></a>
+							<div class="inner">
+								<br />
+								<a
+									href="https://unikore.it/index.php/it/ingegneria-informatica-persone/docenti-del-corso/itemlist/category/1589-siniscalchi">
+									<h3>Sabato Marco Siniscalchi</h3>
+								</a>
+								<p>Kore University of Enna </p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="https://odettescharenborg.wordpress.com/" class="image left"><img
+									src="images/Odette_Scharenborg.jpeg" alt="" /></a>
+							<div class="inner">
+								<br />
+								<a href="https://odettescharenborg.wordpress.com/">
+									<h3>Odette Scharenborg</h3>
+								</a>
+								<p>Delft University of Technology</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="https://odettescharenborg.wordpress.com/" class="image left"><img
+									src="images/2024hangchen.jpg" alt="" /></a>
+							<div class="inner">
+								<br />
+								<a href="https://odettescharenborg.wordpress.com/">
+									<h3>Hang Chen</h3>
+								</a>
+								<p>University of Science and Technology of China</p>
+							</div>
+						</div>
+					</section>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="wrapper style1">
+			<div class="container">
+				<h1 style="font-size: 150%;">Contact Us</h1>
+				<p style="font-size: 110%;">For additional information, please email us at <strong>mispchallenge@gmail.com</strong>.</p>
+						<!-- <p style="font-size: 110%;">Also, welcome to join our <a href="https://groups.google.com/g/misp2023"><strong>Google group </strong></a>.</p> -->
+			</div>
+		</section>
+
+
+
+		<!-- CTA -->
+		<!-- 				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Are you ready to continue your quest?</h2>
+							<a href="#" class="button">Insert Coin</a>
+						</header>
+					</div>
+				</section> -->
+
+		<!-- Footer -->
+		<div id="footer">
+			<!-- 					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Links</h3>
+								<ul class="links">
+									<li><a href="#">Mattis et quis rutrum</a></li>
+									<li><a href="#">Suspendisse amet varius</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan dolor</a></li>
+									<li><a href="#">Mattis rutrum accumsan</a></li>
+									<li><a href="#">Suspendisse varius nibh</a></li>
+									<li><a href="#">Sed et dapibus mattis</a></li>
+								</ul>
+							</section>
+
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>More Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Duis neque nisi dapibus</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan sed</a></li>
+									<li><a href="#">Mattis et sed accumsan</a></li>
+									<li><a href="#">Duis neque nisi sed</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum amet varius</a></li>
+								</ul>
+							</section>
+
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div> -->
+
+			<!-- Icons -->
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+				<li><a href="https://groups.google.com/g/misp2021" class="icon brands fa-google-plus-g"><span
+							class="label">Google+</span></a></li>
+			</ul>
+
+			<!-- Copyright -->
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; All rights reserved</li>
+					<li>E-mail: mispchallenge@gmail.com</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

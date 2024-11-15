@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MISP Challenge-Overview</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<img src="images/isca.png" width="6%" height="6%" style="margin:0 77% 0 0;"><h1 style="font-size: 120%;  margin: -4% 0 -2% 0"><a href="index.html" id="logo">Multimodal Information Based Speech Processing (MISP) Challenge 2021</a><img src="images/ieee.png" width="7%" height="7%" style="margin:-15% 0% 1% 79%;"></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current"><a href="overview.html">Overview</a><li>
+								<li>
+									<a href="#">Task1</a>
+									<ul>
+										<li><a href="task1_data.html">Data</a></li>
+										<li><a href="task1_software.html">Software</a></li>
+										<li><a href="task1_instructions.html">Instructions</a></li>
+						                <li><a href="task1_leaderboard.html">Leaderboard</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Task2</a>
+									<ul>
+										<li><a href="task2_data.html">Data</a></li>
+										<li><a href="task2_software.html">Software</a></li>
+										<li><a href="task2_instructions.html">Instructions</a></li>
+						                <li><a href="task2_leaderboard.html">Leaderboard</a></li>
+									</ul>
+								</li>
+								<li><a href="download.html">Registration</a></li>
+								<li><a href="extral_data.html">Extral Data</a></li>
+								<!-- <li><a href="results.html">Results</a></li> -->
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h1 style="font-size: 150%;">Background & Task Overview</h1>
+<!--                    <h3>Background</h3>-->
+                  					</header>
+										<p>With the emergence of many speech-enable applications, the scenarios (e.g., home and meeting)
+											are becoming increasingly challenging due to the factors of adverse acoustic environments
+											(far-field audio, background noises, and reverberations) and conversational multi-speaker interactions
+											with a large portion of speech overlaps. The state-of-the-art speech processing techniques based on
+											the single audio modality encounter the performance bottlenecks, e.g., yielding the word error rate
+											of about 40% in CHiME-6 dinner party scenario. Motivated by this, the MISP challenge aims to tackle
+											these problems by introducing additional modality information (such as video or text),
+											yielding better environmental and speaker robustness in realistic applications.</p>
+
+									     <p>For the first MISP challenge, we target the home TV scenario, where several people are chatting in Chinese while watching TV in the living room and they can interact with a smart speaker/TV. As the new features, the carefully selected far-field/mid-field/near-field microphone arrays and cameras are arranged to collect both audio and video data, respectively. Also the time synchronizations among different microphone arrays and video cameras are well designed for conducting the research on the multi-modality fusion. The challenge considers the problem of distant multi-microphone conversational audio-visual wake-up and audio-visual speech recognition in everyday home environments. How to leverage on both audio and video data to improve the environmental robustness is quite interesting. The researchers from both academia and industry are warmly welcome to work on our two audio-visual tasks (with details as below) for promoting the research of speech processing using multimodal information to cross the practical threshold of realistic applications in challenging scenarios. All approaches are encouraged, whether they are emerging or established, and whether they rely on signal processing or machine learning.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="wrapper style2">
+					<div class="container">
+						<h1 style="font-size: 150%;">Scenario</h1>
+						<p>We consider the following scenario: several people are chatting while watching TV in the living room, and they can interact with a smart speaker/TV. With the multimodal data collected by microphones and cameras, we can conduct the research to solve the following two speech processing tasks:</p>
+							<ol>
+					        <li>Audio-Visual Wake Word Spotting</li>
+							<li>Audio-Visual Speech Recognition with Oracle Speaker Diarization</li>
+							</ol>
+						<p></p>
+						<p>All two tasks suffer from performance degradations yielded by adverse acoustic conditions in the Home TV scene described above and the final recognition result is seriously distorted. We proposed the visual modality could be a powerful supplement input for anyone system.</p>
+
+						<center>
+                    		<figure style="padding:0px;border:0px; margin:0px">
+                    		<img src="images/Fig1.jpg" alt="Schematic Diagram" style="width:70%;padding:0px;border:0" />
+                    		<figcaption>(a) Schematic Diagram</figcaption>
+                    		</figure>
+                    		<figure style="padding:0px;border:0px; margin:10px">
+                    		<img src="images/Fig2.jpg" alt="Real Shot" style="width:70%;padding:0px;border:0" />
+                    		<figcaption>(b) Real Shot</figcaption>
+                    		<figcaption>Fig.1. Recording Scene</figcaption>
+                    		</figure>
+			            </center>
+
+
+			            <p>We aim to support the research about audio-visual speech processing in the Home TV scene by providing the first large-scale audio-visual corpus of multi-speaker conversational speech recorded via multi-microphone hardware in real living rooms.</p>
+			            <p>An example of the recording scene is shown in Fig.1. Subfigure a is a schematic diagram, six participants are chatting while multiple devices are used to record audio and video in parallel. Subfigure b is a real shot of the recording scene.</p>
+			            <p>There still are some variables in the conversation that is taking place in real living room, for example, the TV is turned on/off, the conversation is happened during the day or night, etc. Specifically, by observing the real conversations these were taking place in real living room, we found that the participants would be divided into several groups to discuss different topics. Compared with all participants discussing the same topic, grouping would result in higher overlap ratios. We control the above variables to cover the real scene comprehensively and evenly during the recording.</p>
+					</div>
+				</section> 
+
+ 				<section class="wrapper style1">
+					<div class="container">
+						<h1 style="font-size: 150%;">Recording Setup</h1>
+				        <center>
+                            <figure style="padding:0px;border:0px; margin:10px">
+                            <img src="images/Fig3.jpg" alt="Figure2:A real shot of recording in home TV scenario" style="width:60%;padding:0px;border:0" />
+                            <figcaption>Fig.2. Recording Devices</figcaption>
+                            </figure>
+				        </center>
+						<p>According to the distance between the device and the speaker, multiple recording devices were divided into 3 categories:</p>
+						<ol type="a">
+					        <li>Far devices: a linear microphone array (6 mic, 16 kHz, 16-bit) and a wide-angle camera (1080p, 25 fps, 2pi/3), which are placed 3-5m away from the speaker. Each microphone is an omnidirectional microphone. The distance between adjacent microphones is 35mm. The detailed parameters of the wide-angle camera are shown in the table. The linear microphone array is fixed on the top of the wide-angle camera, parallel to the x-axis of the camera coordinate system, and the midpoint coincides with the origin of the camera coordinate system. All participants appear in the camera, which brings speakers position information while reducing the resolution of the lip region of interest (ROI);</br>
+					        <center>
+							<table  class='default'>
+							    <tr>
+							        <th>Sensor type</th>
+							        <td>200W CMOS Sensor</td>
+							    </tr>
+							    <tr>
+							        <th>Pixel size</th>
+							        <td>3 um * 3 um</td>
+							    </tr>
+							    <tr>
+							        <th>Focus plane</th>
+							        <td>1/2.7"</td>
+							    </tr>
+							    <tr>
+							        <th>Focal length</th>
+							        <td>2.8 mm</td>
+							    </tr>
+							    <tr>
+							        <th>Aperture</th>
+							        <td>F1.8</td>
+							    </tr>
+							    <tr>
+							        <th>Field of view</th>
+							        <td>D=141° H=120° V=63°</td>
+							    </tr>
+							    <tr>
+							        <th>Resolution</th>
+							        <td>1920*1080p</td>
+							    </tr>
+							    <tr style="border-bottom: solid 1px;">
+							        <th>Frame rate</th>
+							        <td>25 fps</td>
+							    </tr>
+							    <tr>
+							        <th colspan="2" style="border: solid 1px;">Tab 1. Parameters of the far wide-angle camera</th>
+							    </tr>
+							</table>
+						</center>
+					        </li>
+							<li>Middle devices: a linear microphone array (2 mic, 44.1 kHz, 16-bit) and n high-definition cameras (720p, 25fps, pi/2), which are placed 1-1.5m away from the speaker, where n is the number of participants within this conversation. Two microphones are omnidirectional microphones. The distance between two microphones is 80 mm. The detailed parameters of the high-definition camera are shown in the table. There is no relationship between the position of the linear microphone array and the high-definition camera. There is only the corresponding speaker in each camera, the lip ROI is recorded clearly;</br>
+							<center>
+							<table  class='default'>
+							    <tr>
+							        <th>Sensor type</th>
+							        <td>200W CMOS Sensor</td>
+							    </tr>
+							    <tr>
+							        <th>Pixel size</th>
+							        <td>3.75 um * 3.75 um</td>
+							    </tr>
+							    <tr>
+							        <th>Focus plane</th>
+							        <td>1/3"</td>
+							    </tr>
+							    <tr>
+							        <th>Focal length</th>
+							        <td>3 mm</td>
+							    </tr>
+							    <tr>
+							        <th>Aperture</th>
+							        <td>F: 1.5</td>
+							    </tr>
+							    <tr>
+							        <th>Field of view</th>
+							        <td>D=116° H=99° V=53.4°</td>
+							    </tr>
+							    <tr>
+							        <th>Resolution</th>
+							        <td>1280*720p</td>
+							    </tr>
+							    <tr style="border-bottom: solid 1px;">
+							        <th>Frame rate</th>
+							        <td>25 fps</td>
+							    </tr>
+							    <tr>
+							        <th colspan="2" style="border: solid 1px;">Tab 2. Parameters of the middle high-definition camera</th>
+							    </tr>
+							</table>
+						</center>
+							</li>
+							<li>Near devices: n high-fidelity microphones (44.1 kHz, 16-bit), which were stuck in the middle of the corresponding speaker's chin, respectively. The collected audio signal is rarely interfered by the off-target source and the SNR is estimated to be greater than 15 db. This provides a guarantee for high-quality manual transcription.</li>
+							<p></p>
+						<p>Various devices have resulted in inconsistent clocks. We address this from two aspects: synchronization devices and manual post-processing.<p>
+							<li>Synchronization devices: the sound card (ZOOM F8n) is used to synchronize the clock of the middle linear microphone array and the clocks of near high-fidelity microphones while Vicando software, running on the industrial PC (MIC-770), is used to synchronize the clocks of all cameras.</li>
+						</ol>
+						<p></p>
+						<p>Even if synchronization devices were used, there are still 3 different clocks, i.e. the clock of the sound card, the clock of the far linear microphone array and the clock of the industrial PC. They are synchronized by finding the mark point manually. A specific behavior, i.e. knocking the cup, would be done while the recording is started. The visual frame where the cup wall and the cup cover are in contact and the waveform point which is corresponding to the impact sound are aligned manually</p>
+					</div>
+				</section> 
+
+
+			<!-- Footer -->
+				<div id="footer">
+<!-- 					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Links</h3>
+								<ul class="links">
+									<li><a href="#">Mattis et quis rutrum</a></li>
+									<li><a href="#">Suspendisse amet varius</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan dolor</a></li>
+									<li><a href="#">Mattis rutrum accumsan</a></li>
+									<li><a href="#">Suspendisse varius nibh</a></li>
+									<li><a href="#">Sed et dapibus mattis</a></li>
+								</ul>
+							</section>
+
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>More Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Duis neque nisi dapibus</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan sed</a></li>
+									<li><a href="#">Mattis et sed accumsan</a></li>
+									<li><a href="#">Duis neque nisi sed</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum amet varius</a></li>
+								</ul>
+							</section>
+
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div> -->
+
+					<!-- Icons -->
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+							<li><a href="https://groups.google.com/g/misp2021" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; All rights reserved</li><li>E-mail: mispchallenge@gmail.com</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
