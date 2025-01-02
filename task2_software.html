@@ -76,10 +76,111 @@ ul.c {list-style-type: square;}
 						</nav>
 
 				</div>
-				<h1 style="font-size: 150%;">Coming Soon...</h1>
+				<!-- <h1 style="font-size: 150%;">Coming Soon...</h1> -->
 			<!-- Main -->
 			<!-- <h1 style="font-size: 150%;">For details, please refer to Github  <a href="https://github.com/mispchallenge/MISP-2023-Challenge-Baseline">link</a>. The webpage is being updated.</h1> -->
-			 
+			<section class="wrapper style2">
+			<div class="container">
+
+				<h3 id="task2submission">Submission</h3>
+				<div style="border-color:#922;color:#922;font-weight:bold">
+					<h2>Note:</h2>
+					<h3> Now Evaluation Set Phase: 2025.01.03 — 2025.01.24 (AOE)<br> 1.Follow the steps 
+						mentioned below, make sure to use the same e-mail address on MISP2025 to register on codalab, and then send applications to participate.
+						<br> 2.Follow the steps mentioned below, set your teamname on codalab，and make sure it's the same as the one that you use to register in the MISP2025.
+					</h3>
+				</div>
+				<ul>
+					<li><strong>STEP 1:</strong> Register on <a href="https://codalab.lisn.upsaclay.fr/">codalab</a>
+					</li>
+				</ul>
+				<blockquote>
+					<p>Note: make sure to use <strong>the same e-mail address and teamname</strong> in the MISP2025 and
+						codalab, or you may not be allowed to submit the results in the competition. If you'd like to
+						change e-mail address, please contact with organizers. </p>
+					<p><img src="images/task2_sub1.png" alt="task2_sub1.png" /></p>
+				</blockquote>
+				<ul>
+					<li><strong>STEP 2:</strong> Apply to join the competition and wait for the approval. Here are
+						<strong><a href="https://codalab.lisn.upsaclay.fr/competitions/21168">Evaluation Phase Leaderboard
+								Entrance</a> </strong>
+					</li>
+				</ul>
+
+				<blockquote>
+					<p>Tips: just check the box ( you don't need to download the term as you have signed it when you
+						register on MISP2025 competition ), and we'll permit access that night.</p>
+					<p><img src="images/register.png" alt="register" /></p>
+				</blockquote>
+
+				<ul>
+					<li><strong>STEP 3:</strong> Submit your result and check the scores</li>
+				</ul>
+				<blockquote>
+					<ul>
+						<li>
+							<p>Make sure your submitted zip file as following directory structure:</p>
+							<p><em>|summission.zip</em></p>
+							<p>​<em> ||--summission.txt</em></p>
+						</li>
+						<li>
+							<p>Make sure each row of the transcript in the following format, which is a key-word separated by a space character:</p>
+						</li>
+					</ul>
+					<blockquote>
+						<p><em>segment_id 文字文字文字</em> （only Chinese characters included in the text part without any
+							punctuation）</p>
+					</blockquote>
+					<ul>
+						<li><p><em>The segment id is named as follows:</p></li>
+						
+					</ul>
+					<blockquote>
+						<p>< Speakers ID >_< Session ID >_< Speakers IDs >_F8N_< Start time >-< end time > </p>
+					</blockquote>
+					<ul>
+						<li>
+							<p>Here are the <a href="doc/task2_submission.zip">submission example</a> for the evaluation set. 
+								Notice: The number of segments in ground truth is smaller than those directly extracted from the transcript(.textgrid files), since some of the segments labeled in .textgrid files lack relevant audio or video segments for early shutdown of recording devices in the recording process.
+								</p>
+						</li>
+						<li>
+							<p>When the "Status" in the submission table turns to "Finished", you can refresh the page the check the score below. You can also click the button named “View scoring output log” to check if you miss any segments in your submission, for example:</p>
+						</li>
+					</ul>
+					<blockquote>
+						<p>cpCER: 71.11<br>
+					</blockquote>
+
+					<p><img src="images/submit.png" alt="" /></p>
+				</blockquote>
+				<ul>
+					<li><strong>Other information</strong></li>
+				</ul>
+				<blockquote>
+					<ul>
+						<li>
+							<p>Make sure a. your submitted transcript, includes all segments in the evaluation set. b. your submission files are in required format, or the submission will fail.</p></li>
+							<li><p>For each submitted score, it will be directly on the leader board if it's your best score so far.</p></li>
+							<li><p>During the evaluation set phase, every group is allowed to 5 times per day.</p></li>
+							<li><p>If you meet any problems during submission, please contact with us by e-mail at mispchallenge@gmail.com.</p></li>
+					</ul>
+				</blockquote>
+			</div>
+		</section>
+
+		<!-- Gigantic Heading -->
+		<!-- 				<section class="wrapper style2">
+					<div class="container">
+						<h1 style="font-size: 150%;">......</h1>
+					</div>
+				</section>
+
+				<section class="wrapper style1">
+					<div class="container">
+						<h1 style="font-size: 150%;">......</h1>
+					</div>
+				</section> --> 
 			
 			
 			<!-- Footer -->
@@ -96,7 +197,7 @@ ul.c {list-style-type: square;}
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
